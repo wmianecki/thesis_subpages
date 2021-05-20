@@ -1,0 +1,143 @@
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    background-color: black;
+    padding: 30;
+    margin: 0;
+    list-style: none;
+  
+  }
+  
+  .flex-item {
+
+    padding: 115x;
+    margin-top: 0px;
+    line-height: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    background-color: black;
+
+  }
+
+
+
+#container {
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+    height: 100vh;
+    background-color:black;
+
+}
+
+#container1 {
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+    /* height: 200vh; */
+    background-color: black;
+
+}
+
+.box {
+    width:100%;
+    margin: 5px;
+    text-align: center;     /* will center text in <p>, which is not a flex item */
+    background-color: black;
+    color: white;
+
+}
+
+#bluebox {
+
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: Times, serif;
+}
+
+@keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+  /* .blink {
+    animation: blink .75s step-start 0s infinite;
+    -webkit-animation: blink 1.75s step-start 0s infinite;
+  } */
+
+  #overlayText {
+    position:absolute;
+     top:30%;
+     left:20%;
+     z-index:1;
+     font-family: sans-serif;
+   }
+   
+   #topText {
+     color: white;
+     font-size: 12px;
+     align-self: center;
+     font-family: sans-serif;
+     font-weight: 200;
+   }
+
+   #flexitem:hover #topText {
+    display: block;
+  }
+
+  body {
+      color: white;
+  }
+
+  .array-text {
+    color: white;
+    font-size: 2em;
+    align-self: center;
+    font-family: sans-serif;
+    font-weight: 200;
+    max-width: 30em;
+  }
+
+  
+body {
+  margin: 0;
+}
+
+#redbox {
+  letter-spacing: 1pt;
+}
+
+
+/* unvisited link */
+a:link {
+  color: white;
+  text-decoration:none;
+  /* letter-spacing: 1; */
+}
+
+/* visited link */
+a:visited {
+  color:white;
+  text-decoration:none;
+}
