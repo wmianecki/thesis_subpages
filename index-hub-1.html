@@ -1,42 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.bg {
-  /* The image used */
-  background-image: url('images/pegman.png');
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media only screen and (max-width: 600px) {
-    body {
-      filter: blur(17px);
-    }}
-
-    @media only screen and (max-height: 600px) {
-    body {
-      filter: blur(17px);
-    }}
-    
-</style>
-</head>
-<body>
-
-<div class="bg"></div>
-
-<p>This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
-
-</body>
+   
+   <head>
+      <title>HTML Frames</title>
+   </head>
+   
+   <frameset cols = "20%,50%,15%,15%" rows = "60%,40%>
+      <frame name = "1"  href="/frames-1.html">
+      <frame name = "2" src="https://wmianecki.github.io/thesis_subpages/index-4.html" />
+      <frame name = "3" src = "https://wmianecki.github.io/thesis_subpages/index-title.html" />
+      <frame name = "4" src = "https://wmianecki.github.io/thesis_subpages/index.html" />\
+      <frame name = "top" src = "https://wmianecki.github.io/thesis_subpages/index-2.html" />
+      <frame name = "main" src = "https://wmianecki.github.io/thesis_subpages/index.html"  />
+      <frame name = "bottom" src = "https://wmianecki.github.io/thesis_subpages/index-4.html">
+      
+      <noframes>
+         <body>Your browser does not support frames.</body>
+      </noframes>
+   </frameset>
+   
 </html>
