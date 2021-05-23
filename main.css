@@ -1,0 +1,36 @@
+html, body {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+  
+  body {
+    margin: 1rem;
+    background-color: black;
+    color: white;
+  }
+  
+  img {
+    width: 100%;
+    display: block;
+    margin-bottom: 2rem;
+  }
+  
+  h1, h2 {
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    margin-top: 5rem;
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      filter: blur(17px);
+    }}
+
+    @media only screen and (max-height: 600px) {
+    body {
+      filter: blur(17px);
+    }}
